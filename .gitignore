@@ -1,0 +1,13 @@
+[Oo]bj
+[Bb]in
+*.user
+*.suo
+*.cachefile
+*.[Cc]ache
+*.bak
+*.ncb
+*.log 
+*.DS_Store
+*.dll
+*.exe
+[Tt]humbs.db 
