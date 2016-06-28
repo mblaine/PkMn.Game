@@ -1,6 +1,6 @@
 # PkMn.Game
 
-PkMn.Game is a graphical implementation of generation I Pokémon battles. **It uses the PkMn.Model and PkMn.Instnace libraries whose source code can be found in the repository [PkMn](../PkMn).**
+PkMn.Game is a graphical implementation of generation I Pokémon battles. **It uses the PkMn.Model and PkMn.Instnace libraries whose source code can be found in the repository [PkMn](../../../PkMn).**
 
 ## License
 
@@ -26,7 +26,7 @@ When the computer is sending out a new Pokémon and the game asks if you want to 
 
 ## Download
 
-Visit [**releases**](releases) to download the latest version.
+Visit [**releases**](../../releases) to download the latest version.
 
 **To run this program you must have the [Microsoft XNA Framework](https://www.microsoft.com/en-us/download/details.aspx?id=20914) installed and a graphics card that supports at least Pixel Shader 3.0.**
 
@@ -42,7 +42,7 @@ The error message *"Could not find a Direct3D device that supports the XNA Frame
 
 ## Screenshot
 
-![In game screenshot](raw/master/screenshot.png)
+![In game screenshot](screenshot.png)
 
 
 ## Picking your team
