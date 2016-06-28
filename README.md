@@ -11,11 +11,13 @@ Remaining program code is copyright © 2016 Matthew Blaine and released under the
 ## Controls
 
 ##### Keyboard
+
 Use the arrow keys to navigate menus, enter or space to submit, and escape to cancel or back out of a menu.
 
 Additionally you can use the keys W and E to switch into and out of a widescreen mode where additional heads-up display information is shown. This information includes current stat stages and effective stat numbers. This is information as it was calulated in the original games, though it wouldn't show it to you.
 
 ##### Gamepad
+
 Use the left thumbstick or directional pad to navigate menus, the A button to submit, and B to cancel or back out of a menu.
 
 ##### General notes
@@ -25,6 +27,18 @@ When the computer is sending out a new Pokémon and the game asks if you want to 
 ## Download
 
 Visit [**releases**](releases) to download the latest version.
+
+**To run this program you must have the [Microsoft XNA Framework](https://www.microsoft.com/en-us/download/details.aspx?id=20914) installed and a graphics card that supports at least Pixel Shader 3.0.**
+
+## Troubleshooting
+
+##### The game won't start or it crashes immediately
+
+The [Microsoft XNA Framework](https://www.microsoft.com/en-us/download/details.aspx?id=20914) must be installed for this program to run.
+
+##### No suitable graphics card found
+
+The error message *"Could not find a Direct3D device that supports the XNA Framework HiDef profile"* means that your graphics card is unfortunately not able to run this game. This program requires a graphics card that supports at least Pixel Shader 3.0 in order to work.
 
 ## Screenshot
 
