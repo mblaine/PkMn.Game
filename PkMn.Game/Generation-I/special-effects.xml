@@ -3,42 +3,42 @@
 
   
   <sequence type="transition" name="Sent Out">
-	<effect type="delay" delay="14" />
-	<effect type="sprite-transform" transform="show-as-normal" who="self" />
-	<effect type="animation" animation="poof" delay="4" who="self" />
+    <effect type="delay" delay="14" />
+    <effect type="sprite-transform" transform="show-as-normal" who="self" />
+    <effect type="animation" animation="poof" delay="4" who="self" />
     <effect type="sprite-transform" transform="stretch" who="self" />
     <effect type="delay" delay="45" />
   </sequence>
   <sequence type="transition" name="Recalled">
-	<effect type="delay" delay="15" />
+    <effect type="delay" delay="15" />
     <effect type="sprite-transform" transform="shrink" who="self" />
-	<effect type="delay" delay="30" />
+    <effect type="delay" delay="30" />
   </sequence>
   <sequence type="transition" name="Fainted">
     <effect type="delay" delay="30" />
     <effect type="sprite-transform" transform="slide-down" who="self" />
   </sequence>
   <sequence type="transition" name="Fade Out">
-	<effect type="delay" delay="15" />
-	<effect type="palette-swap" palette="lighter-1" />
+    <effect type="delay" delay="15" />
+    <effect type="palette-swap" palette="lighter-1" />
     <effect type="delay" delay="4" />
-	<effect type="palette-swap" palette="lighter-2" />
+    <effect type="palette-swap" palette="lighter-2" />
     <effect type="delay" delay="4" />
-	<effect type="palette-swap" palette="lightest" />
+    <effect type="palette-swap" palette="lightest" />
   </sequence>
   <sequence type="transition" name="Fade In">
-	<effect type="delay" delay="60" />
-	<effect type="palette-swap" palette="lighter-2" />
+    <effect type="delay" delay="60" />
+    <effect type="palette-swap" palette="lighter-2" />
     <effect type="delay" delay="4" />
-	<effect type="palette-swap" palette="lighter-1" />
+    <effect type="palette-swap" palette="lighter-1" />
     <effect type="delay" delay="4" />
-	<effect type="palette-swap" palette="normal" />
+    <effect type="palette-swap" palette="normal" />
     <effect type="delay" delay="15" />
   </sequence>
 
   
   <sequence type="palette-swaps" name="Screen Flash">
-	<effect type="palette-swap" palette="set" />
+    <effect type="palette-swap" palette="set" />
     <effect type="palette-swap" palette="inverted" />
     <effect type="delay" delay="2" />
     <effect type="palette-swap" palette="lightest" />
@@ -54,7 +54,7 @@
   </sequence>  
   <sequence type="palette-swaps" name="Screen Flash Dark Fast">
     <effect type="palette-swap" palette="inverted" />
-	<effect type="delay" delay="1" />
+    <effect type="delay" delay="1" />
     <effect type="palette-swap" palette="lightest" />
     <effect type="palette-swap" palette="darker-alt-2" />
   </sequence>  
@@ -63,108 +63,108 @@
     <effect type="delay" delay="1" />
     <effect type="palette-swap" palette="darker-2" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="darkest" />
+    <effect type="palette-swap" palette="darkest" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="darker-2" />
+    <effect type="palette-swap" palette="darker-2" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="darker-1" />
+    <effect type="palette-swap" palette="darker-1" />
     <effect type="delay" delay="1" />
     <effect type="palette-swap" palette="normal" />
-	<effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="lighter-1" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="lighter-2" />
+    <effect type="palette-swap" palette="lighter-1" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="lightest" />
+    <effect type="palette-swap" palette="lighter-2" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="lighter-2" />
+    <effect type="palette-swap" palette="lightest" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="lighter-1" />
+    <effect type="palette-swap" palette="lighter-2" />
     <effect type="delay" delay="1" />
-	<effect type="palette-swap" palette="normal" />
+    <effect type="palette-swap" palette="lighter-1" />
+    <effect type="delay" delay="1" />
+    <effect type="palette-swap" palette="normal" />
   </sequence>
   <sequence type="palette-swaps" name="Screen Cycle 2">
     <effect type="palette-swap" palette="darker-1" />
     <effect type="delay" delay="2" />
     <effect type="palette-swap" palette="darker-2" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="darkest" />
+    <effect type="palette-swap" palette="darkest" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="darker-2" />
+    <effect type="palette-swap" palette="darker-2" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="darker-1" />
+    <effect type="palette-swap" palette="darker-1" />
     <effect type="delay" delay="2" />
     <effect type="palette-swap" palette="normal" />
-	<effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="lighter-1" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="lighter-2" />
+    <effect type="palette-swap" palette="lighter-1" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="lightest" />
+    <effect type="palette-swap" palette="lighter-2" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="lighter-2" />
+    <effect type="palette-swap" palette="lightest" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="lighter-1" />
+    <effect type="palette-swap" palette="lighter-2" />
     <effect type="delay" delay="2" />
-	<effect type="palette-swap" palette="normal" />
+    <effect type="palette-swap" palette="lighter-1" />
+    <effect type="delay" delay="2" />
+    <effect type="palette-swap" palette="normal" />
   </sequence>
   <sequence type="palette-swaps" name="Screen Cycle Long">
     <effect type="sequence" sequence="Screen Cycle 2" />
-	<effect type="sequence" sequence="Screen Cycle" />
-	<effect type="sequence" sequence="Screen Cycle" />
+    <effect type="sequence" sequence="Screen Cycle" />
+    <effect type="sequence" sequence="Screen Cycle" />
   </sequence>
 
   
   <sequence type="status-ailment" name="Asleep">
-	<effect type="delay" delay="30" />
-	<effect type="animation" animation="zees" delay="16" who="self" />
-	<effect type="delay" delay="8" />
+    <effect type="delay" delay="30" />
+    <effect type="animation" animation="zees" delay="16" who="self" />
+    <effect type="delay" delay="8" />
     <effect type="animation" animation="zees" delay="16" who="self" />
   </sequence>
   <sequence type="status-ailment" name="Confused">
-	<effect type="delay" delay="30" />
-	<effect type="animation" animation="question-mark" delay="8" who="self" />
-	<effect type="delay" delay="8" />
+    <effect type="delay" delay="30" />
+    <effect type="animation" animation="question-mark" delay="8" who="self" />
+    <effect type="delay" delay="8" />
     <effect type="animation" animation="question-mark" delay="8" who="self" />
   </sequence>
   <sequence type="status-ailment" name="Seeded">
-	<effect type="delay" delay="10" />
+    <effect type="delay" delay="10" />
     <effect type="palette-swap" palette="lighter-1" />
-	<effect type="animation" animation="squares" delay="6" who="self" />
+    <effect type="animation" animation="squares" delay="6" who="self" />
     <effect type="animation" animation="transfer-bubble" delay="6" who="self" />
     <effect type="palette-swap" palette="normal" />
   </sequence>
   <sequence type="status-ailment" name="Burned">
-	<effect type="delay" delay="10" />
-	<effect type="animation" animation="skull" delay="8" who="self" />
-	<effect type="delay" delay="8" />
+    <effect type="delay" delay="10" />
+    <effect type="animation" animation="skull" delay="8" who="self" />
+    <effect type="delay" delay="8" />
     <effect type="animation" animation="skull" delay="8" who="self" />
   </sequence>
   <sequence type="status-ailment" name="Poisoned">
-	<effect type="delay" delay="10" />
-	<effect type="animation" animation="skull" delay="8" who="self" />
-	<effect type="delay" delay="8" />
+    <effect type="delay" delay="10" />
+    <effect type="animation" animation="skull" delay="8" who="self" />
+    <effect type="delay" delay="8" />
     <effect type="animation" animation="skull" delay="8" who="self" />
   </sequence>
 
   
   <sequence type="move-generic" name="Player Damaging">
-	<effect type="sprite-transform" transform="blink" who="foe" />
+    <effect type="sprite-transform" transform="blink" who="foe" />
   </sequence>
   <sequence type="move-generic" name="Player Damaging With Effect Chance">
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="2" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="2" />
   </sequence>
   <sequence type="move-generic" name="Player Non-Damaging">
-	<effect type="screen-transform" transform="shake-horizontally-slow" offset="3" />
+    <effect type="screen-transform" transform="shake-horizontally-slow" offset="3" />
   </sequence>
   <sequence type="move-generic" name="Enemy Damaging">
-	<effect type="screen-transform" transform="shake-vertically" offset="8" />
+    <effect type="screen-transform" transform="shake-vertically" offset="8" />
   </sequence>
   <sequence type="move-generic" name="Enemy Damaging With Effect Chance">
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="8" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="8" />
   </sequence>
   <sequence type="move-generic" name="Enemy Non-Damaging">
-	<effect type="screen-transform" transform="shake-horizontally-slow" offset="6" />
+    <effect type="screen-transform" transform="shake-horizontally-slow" offset="6" />
   </sequence>
 
   
@@ -187,11 +187,11 @@
   </sequence>
   <sequence type="move" name="Mega Punch">
     <effect type="animation" animation="triple-pow" delay="6" who="foe" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Pay Day">
     <effect type="animation" animation="double-pow" delay="8" who="foe" />
@@ -219,13 +219,13 @@
   </sequence>
   <sequence type="move" name="Guillotine">
     <effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" start-at="6" stop-early="11" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" start-at="12" stop-early="17" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" start-at="18"/>
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" start-at="6" stop-early="11" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" start-at="12" stop-early="17" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="cross-cut" delay="6" who="foe" param="1" start-at="18"/>
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Razor Wind Charge">
     <effect type="palette-swap" palette="lighter-1" />
@@ -234,7 +234,7 @@
     <effect type="palette-swap" palette="normal" />
   </sequence>
   <sequence type="move" name="Razor Wind">
-	<effect type="animation" animation="cross-cut" delay="6" who="foe" />
+    <effect type="animation" animation="cross-cut" delay="6" who="foe" />
   </sequence>
   <sequence type="move" name="Swords Dance">
     <effect type="animation" animation="head-circle" delay="7" who="self" param="1" />
@@ -258,14 +258,14 @@
   </sequence>
   <sequence type="move" name="Fly Charge">
     <effect type="sprite-transform" transform="flatten" who="self" />
-	<effect type="animation" animation="column" delay="2" who="self" />
+    <effect type="animation" animation="column" delay="2" who="self" />
   </sequence>
   <sequence type="move" name="Fly">
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
     <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Bind">
-	<effect type="animation" animation="braces" delay="4" who="foe" />
+    <effect type="animation" animation="braces" delay="4" who="foe" />
     <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="4" who="foe" />
   </sequence>
@@ -285,11 +285,11 @@
   </sequence>
   <sequence type="move" name="Mega Kick">
     <effect type="animation" animation="triple-pow" delay="6" who="foe" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Jump Kick">
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
@@ -303,7 +303,7 @@
   </sequence>
   <sequence type="move" name="Headbutt">
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
-	<effect type="sequence" sequence="Screen Flash" />
+    <effect type="sequence" sequence="Screen Flash" />
   </sequence>
   <sequence type="move" name="Horn Attack">
     <effect type="animation" animation="spikes" delay="7" who="self" stop-early="28" />
@@ -311,52 +311,52 @@
   </sequence>
   <sequence type="move" name="Fury Attack">
     <effect type="animation" animation="spikes" delay="4" who="self" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="spikes" delay="4" who="self" />
   </sequence>
   <sequence type="move" name="Horn Drill">
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
-	<effect type="delay" delay="2" />
+    <effect type="delay" delay="2" />
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
-	<effect type="delay" delay="2" />
+    <effect type="delay" delay="2" />
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
-	<effect type="delay" delay="2" />
+    <effect type="delay" delay="2" />
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
-	<effect type="delay" delay="2" />
+    <effect type="delay" delay="2" />
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
-	<effect type="delay" delay="2" />
+    <effect type="delay" delay="2" />
   </sequence>
   <sequence type="move" name="Tackle">
     <effect type="sprite-transform" transform="shift-forward" who="self" />
-	<effect type="delay" delay="3" />
+    <effect type="delay" delay="3" />
     <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Body Slam">
     <effect type="sprite-transform" transform="shift-forward" who="self" />
-	<effect type="delay" delay="1" />
+    <effect type="delay" delay="1" />
     <effect type="sequence" sequence="Screen Flash Normal" />
     <effect type="sequence" sequence="Screen Flash Normal" />
     <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Wrap">
     <effect type="animation" animation="braces" delay="4" who="foe" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="4" who="foe" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="4" who="foe" />
   </sequence>
   <sequence type="move" name="Take Down">
     <effect type="sprite-transform" transform="shift-forward" who="self" />
-	<effect type="delay" delay="1" />
+    <effect type="delay" delay="1" />
     <effect type="sequence" sequence="Screen Flash Normal" />
     <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Thrash">
     <effect type="palette-swap" palette="lighter-1" />
-	<effect type="animation" animation="target-lock" delay="6" who="self" />
+    <effect type="animation" animation="target-lock" delay="6" who="self" />
     <effect type="palette-swap" palette="normal" />
-	<effect type="screen-transform" transform="shake-horizontally-slow" offset="6" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" />
+    <effect type="screen-transform" transform="shake-horizontally-slow" offset="6" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" />
   </sequence>
   <sequence type="move" name="Thrash Recurring">
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
@@ -364,10 +364,10 @@
   <sequence type="move" name="Double-Edge">
     <effect type="palette-swap" palette="lighter-1" />
     <effect type="animation" animation="squares" delay="6" who="self" param="1" />
-	<effect type="animation" animation="transfer-bubble" delay="6" who="self" param="1" stop-early="6" />
+    <effect type="animation" animation="transfer-bubble" delay="6" who="self" param="1" stop-early="6" />
     <effect type="palette-swap" palette="normal" />
     <effect type="sprite-transform" transform="shift-forward" who="self" />
-	<effect type="delay" delay="1" />
+    <effect type="delay" delay="1" />
     <effect type="sequence" sequence="Screen Flash Normal" />
     <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
@@ -404,9 +404,9 @@
   </sequence>
   <sequence type="move" name="Roar">
     <effect type="animation" animation="shockwave" delay="8" who="self" />
-	<effect type="delay" delay="6" />
+    <effect type="delay" delay="6" />
     <effect type="animation" animation="shockwave" delay="8" who="self" />
-	<effect type="delay" delay="6" />
+    <effect type="delay" delay="6" />
     <effect type="animation" animation="shockwave" delay="8" who="self" />
   </sequence>
   <sequence type="move" name="Sing">
@@ -419,7 +419,7 @@
   </sequence>
   <sequence type="move" name="Sonic Boom">
     <effect type="animation" animation="shockwave" delay="8" who="self" />
-	<effect type="delay" delay="6" />
+    <effect type="delay" delay="6" />
     <effect type="animation" animation="shockwave" delay="8" who="self" />
     <effect type="animation" animation="twister" delay="7" who="foe" />
     <effect type="animation" animation="single-pow" delay="6" who="foe" />
@@ -464,21 +464,21 @@
   </sequence>
   <sequence type="move" name="Blizzard">
     <effect type="animation" animation="blizzard" delay="4" who="foe" stop-early="15" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="blizzard" delay="4" who="foe" start-at="16" stop-early="31" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="blizzard" delay="4" who="foe" start-at="32" stop-early="47" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="blizzard" delay="4" who="foe" start-at="48" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="blizzard" delay="4" who="foe" start-at="16" stop-early="31" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="blizzard" delay="4" who="foe" start-at="32" stop-early="47" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="blizzard" delay="4" who="foe" start-at="48" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
     <effect type="animation" animation="blizzard" delay="4" who="foe" stop-early="15" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="blizzard" delay="4" who="foe" start-at="16" stop-early="31" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="blizzard" delay="4" who="foe" start-at="32" stop-early="47" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="blizzard" delay="4" who="foe" start-at="48" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="blizzard" delay="4" who="foe" start-at="16" stop-early="31" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="blizzard" delay="4" who="foe" start-at="32" stop-early="47" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="blizzard" delay="4" who="foe" start-at="48" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Psybeam">
     <effect type="animation" animation="beam" delay="3" who="self" param="4" />
@@ -486,13 +486,13 @@
   </sequence>
   <sequence type="move" name="Bubble Beam">
     <effect type="animation" animation="bubbles" delay="18" who="foe" stop-early="17" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="bubbles" delay="18" who="foe" start-at="18" stop-early="35" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="bubbles" delay="18" who="foe" start-at="36" stop-early="53" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="bubbles" delay="18" who="foe" start-at="54" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="bubbles" delay="18" who="foe" start-at="18" stop-early="35" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="bubbles" delay="18" who="foe" start-at="36" stop-early="53" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="bubbles" delay="18" who="foe" start-at="54" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Aurora Beam">
     <effect type="animation" animation="beam" delay="3" who="self" param="1" />
@@ -503,12 +503,12 @@
     <effect type="animation" animation="spiral" delay="5" who="self" />
     <effect type="sequence" sequence="Screen Flash" />
     <effect type="animation" animation="beam" delay="4" who="self" param="0" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="beam" delay="4" who="self" param="0" start-at="8" stop-early="13" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="beam" delay="4" who="self" param="0" start-at="16" stop-early="21" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="beam" delay="4" who="self" param="0" start-at="24" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="beam" delay="4" who="self" param="0" start-at="8" stop-early="13" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="beam" delay="4" who="self" param="0" start-at="16" stop-early="21" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="beam" delay="4" who="self" param="0" start-at="24" />
     <effect type="sequence" sequence="Screen Flash" />
     <effect type="sequence" sequence="Screen Flash" />
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
@@ -548,13 +548,13 @@
   </sequence>
   <sequence type="move" name="Strength">
     <effect type="sprite-transform" transform="shift-forward" who="self" />
-	<effect type="delay" delay="3" />
+    <effect type="delay" delay="3" />
     <effect type="sprite-transform" transform="show" who="self" />
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
   </sequence>
   <sequence type="move" name="Absorb">
     <effect type="palette-swap" palette="lighter-1" />
-	<effect type="animation" animation="squares" delay="6" who="foe" />
+    <effect type="animation" animation="squares" delay="6" who="foe" />
     <effect type="animation" animation="transfer-bubble" delay="6" who="foe" />
     <effect type="palette-swap" palette="normal" />
   </sequence>
@@ -568,8 +568,8 @@
   </sequence>
   <sequence type="move" name="Leech Seed">
     <effect type="animation" animation="seeds" delay="6" who="foe" />
-	<effect type="delay" delay="6" />
-	<effect type="animation" animation="sprout" delay="21" who="foe" />
+    <effect type="delay" delay="6" />
+    <effect type="animation" animation="sprout" delay="21" who="foe" />
   </sequence>
   <sequence type="move" name="Growth">
     <effect type="palette-swap" palette="lighter-1" />
@@ -603,15 +603,15 @@
   </sequence>
   <sequence type="move" name="Petal Dance">
     <effect type="palette-swap" palette="lighter-1" />
-	<effect type="animation" animation="target-lock" delay="6" who="self" />
+    <effect type="animation" animation="target-lock" delay="6" who="self" />
     <effect type="palette-swap" palette="normal" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="2" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="2" />
     <effect type="palette-swap" palette="lighter-1" />
     <effect type="animation" animation="petals" delay="3" who="self" />
     <effect type="palette-swap" palette="normal" />
   </sequence>
   <sequence type="move" name="Petal Dance Recurring">
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" />
   </sequence>
   <sequence type="move" name="String Shot">
     <effect type="animation" animation="strings" delay="8" who="foe" />
@@ -632,24 +632,24 @@
   </sequence>
   <sequence type="move" name="Thunderbolt">
     <effect type="animation" animation="thunder-ball" delay="2" who="foe" stop-early="14" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="18" stop-early="30" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="34" stop-early="42" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="44" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" stop-early="14" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="18" stop-early="30" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="34" stop-early="42" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="44" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="18" stop-early="30" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="34" stop-early="42" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="44" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" stop-early="14" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="18" stop-early="30" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="34" stop-early="42" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="thunder-ball" delay="2" who="foe" start-at="44" />
   </sequence>
   <sequence type="move" name="Thunder Wave">
     <effect type="animation" animation="thunder-ball" delay="3" who="foe" />
     <effect type="animation" animation="braces" delay="2" who="foe" param="1" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="4" who="foe" param="1" />
   </sequence>
   <sequence type="move" name="Thunder">
@@ -690,8 +690,8 @@
   <sequence type="move" name="Psychic">
     <effect type="sequence" sequence="Screen Cycle Long" />
     <effect type="screen-transform" transform="wavy-begin" offset="0" />
-	<effect type="delay" delay="100" />
-	<effect type="screen-transform" transform="wavy-end" offset="0" />
+    <effect type="delay" delay="100" />
+    <effect type="screen-transform" transform="wavy-end" offset="0" />
   </sequence>
   <sequence type="move" name="Hypnosis">
     <effect type="sequence" sequence="Screen Cycle Long" />
@@ -716,13 +716,13 @@
   </sequence>
   <sequence type="move" name="Teleport">
     <effect type="sprite-transform" transform="flatten" who="self" />
-	<effect type="animation" animation="column" delay="2" who="self" />
+    <effect type="animation" animation="column" delay="2" who="self" />
   </sequence>
   <sequence type="move" name="Night Shade">
     <effect type="sequence" sequence="Screen Cycle Long" />
     <effect type="screen-transform" transform="wavy-begin" offset="0" />
-	<effect type="delay" delay="100" />
-	<effect type="screen-transform" transform="wavy-end" offset="0" />
+    <effect type="delay" delay="100" />
+    <effect type="screen-transform" transform="wavy-end" offset="0" />
   </sequence>
   <sequence type="move" name="Mimic">
     <effect type="animation" animation="squares" delay="6" who="foe" param="2" />
@@ -750,7 +750,7 @@
   </sequence>
   <sequence type="move" name="Harden">
     <effect type="palette-swap" palette="lighter-1" />
-	<effect type="animation" animation="target-lock" delay="6" who="self" />
+    <effect type="animation" animation="target-lock" delay="6" who="self" />
     <effect type="sequence" sequence="Screen Flash" />
     <effect type="palette-swap" palette="normal" />
   </sequence>
@@ -792,13 +792,13 @@
   </sequence>
   <sequence type="move" name="Barrier">
     <effect type="animation" animation="shield" delay="12" who="self" />
-	<effect type="delay" delay="12" />
+    <effect type="delay" delay="12" />
     <effect type="animation" animation="shield" delay="12" who="self" />
   </sequence>
   <sequence type="move" name="Light Screen">
     <effect type="palette-swap" palette="lighter-1" />
     <effect type="animation" animation="shield" delay="12" who="self" />
-	<effect type="delay" delay="12" />
+    <effect type="delay" delay="12" />
     <effect type="animation" animation="shield" delay="12" who="self" />
     <effect type="palette-swap" palette="normal" />
   </sequence>
@@ -810,21 +810,21 @@
   <sequence type="move" name="Reflect">
     <effect type="palette-swap" palette="darker-alt-2" />
     <effect type="animation" animation="shield" delay="12" who="self" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="shield" delay="12" who="self" start-at="6" stop-early="17" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="shield" delay="12" who="self" start-at="18" stop-early="29" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="shield" delay="12" who="self" start-at="30" />
-	<effect type="delay" delay="12" />
-	<effect type="palette-swap" palette="darker-alt-2" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="shield" delay="12" who="self" start-at="6" stop-early="17" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="shield" delay="12" who="self" start-at="18" stop-early="29" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="shield" delay="12" who="self" start-at="30" />
+    <effect type="delay" delay="12" />
+    <effect type="palette-swap" palette="darker-alt-2" />
     <effect type="animation" animation="shield" delay="12" who="self" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="shield" delay="12" who="self" start-at="6" stop-early="17" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="shield" delay="12" who="self" start-at="18" stop-early="29" />
-	<effect type="sequence" sequence="Screen Flash Dark Fast" />
-	<effect type="animation" animation="shield" delay="12" who="self" start-at="30" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="shield" delay="12" who="self" start-at="6" stop-early="17" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="shield" delay="12" who="self" start-at="18" stop-early="29" />
+    <effect type="sequence" sequence="Screen Flash Dark Fast" />
+    <effect type="animation" animation="shield" delay="12" who="self" start-at="30" />
     <effect type="palette-swap" palette="normal" />
   </sequence>
   <sequence type="move" name="Focus Energy">
@@ -848,25 +848,25 @@
   </sequence>
   <sequence type="move" name="Self-Destruct">
     <effect type="animation" animation="explosion" delay="3" who="self" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="6" stop-early="17" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="18" stop-early="29" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="30" stop-early="41" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="42" stop-early="53" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="54" />
-	<effect type="sprite-transform" transform="hide" who="self" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="4" />
-	<effect type="delay" delay="30" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="6" stop-early="17" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="18" stop-early="29" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="30" stop-early="41" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="42" stop-early="53" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="54" />
+    <effect type="sprite-transform" transform="hide" who="self" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="4" />
+    <effect type="delay" delay="30" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" stop-early="5" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Egg Bomb">
     <effect type="animation" animation="ball" delay="4" who="foe" />
@@ -903,7 +903,7 @@
   <sequence type="move" name="Clamp">
     <effect type="animation" animation="cross-cut" delay="8" who="foe" param="1" />
     <effect type="animation" animation="braces" delay="6" who="foe" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="6" who="foe" />
   </sequence>
   <sequence type="move" name="Swift">
@@ -923,14 +923,14 @@
   </sequence>
   <sequence type="move" name="Constrict">
     <effect type="animation" animation="braces" delay="6" who="foe" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="6" who="foe" />
-	<effect type="delay" delay="4" />
+    <effect type="delay" delay="4" />
     <effect type="animation" animation="braces" delay="6" who="foe" />
   </sequence>
   <sequence type="move" name="Amnesia">
     <effect type="animation" animation="question-mark" delay="8" who="self" />
-	<effect type="delay" delay="8" />
+    <effect type="delay" delay="8" />
     <effect type="animation" animation="question-mark" delay="8" who="self" />
   </sequence>
   <sequence type="move" name="Kinesis">
@@ -985,7 +985,7 @@
   </sequence>
   <sequence type="move" name="Sky Attack">
     <effect type="sprite-transform" transform="flatten" who="self" />
-	<effect type="animation" animation="column" delay="2" who="self" />
+    <effect type="animation" animation="column" delay="2" who="self" />
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
     <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
@@ -993,7 +993,7 @@
     <effect type="animation" animation="squares" delay="6" who="foe" param="2" />
     <effect type="animation" animation="transfer-bubble" delay="6" who="foe" param="2" />
     <effect type="animation" animation="poof" delay="8" who="self" param="1" stop-early="24" />
-	<effect type="sprite-transform" transform="hide" who="self" />
+    <effect type="sprite-transform" transform="hide" who="self" />
   </sequence>
   <sequence type="move" name="Bubble">
     <effect type="animation" animation="bubbles" delay="22" who="foe" />
@@ -1006,10 +1006,10 @@
   </sequence>
   <sequence type="move" name="Spore">
     <effect type="animation" animation="spores" delay="8" who="foe" stop-early="8" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="spores" delay="8" who="foe" start-at="15" stop-early="40" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="spores" delay="8" who="foe" start-at="47" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="spores" delay="8" who="foe" start-at="15" stop-early="40" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="spores" delay="8" who="foe" start-at="47" />
   </sequence>
   <sequence type="move" name="Flash">
     <effect type="palette-swap" palette="lighter-1" />
@@ -1020,24 +1020,24 @@
   <sequence type="move" name="Psywave">
     <effect type="animation" animation="soundwave" delay="6" who="self" />
     <effect type="screen-transform" transform="wavy-begin" offset="0" />
-	<effect type="delay" delay="100" />
-	<effect type="screen-transform" transform="wavy-end" offset="0" />
+    <effect type="delay" delay="100" />
+    <effect type="screen-transform" transform="wavy-end" offset="0" />
   </sequence>
   <sequence type="move" name="Splash">
     <effect type="sprite-transform" transform="slide-down" who="self" />
-	<effect type="delay" delay="2" />
-	<effect type="sprite-transform" transform="show" who="self" />
-	<effect type="sprite-transform" transform="slide-down" who="self" />
-	<effect type="delay" delay="2" />
-	<effect type="sprite-transform" transform="show" who="self" />
-	<effect type="sprite-transform" transform="slide-down" who="self" />
-	<effect type="delay" delay="2" />
-	<effect type="sprite-transform" transform="show" who="self" />
-	<effect type="sprite-transform" transform="slide-down" who="self" />
-	<effect type="delay" delay="2" />
-	<effect type="sprite-transform" transform="show" who="self" />
-	<effect type="sprite-transform" transform="slide-down" who="self" />
-	<effect type="sprite-transform" transform="show" who="self" />
+    <effect type="delay" delay="2" />
+    <effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="slide-down" who="self" />
+    <effect type="delay" delay="2" />
+    <effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="slide-down" who="self" />
+    <effect type="delay" delay="2" />
+    <effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="slide-down" who="self" />
+    <effect type="delay" delay="2" />
+    <effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="slide-down" who="self" />
+    <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Acid Armor">
     <effect type="sprite-transform" transform="slide-down" who="self" />
@@ -1049,25 +1049,25 @@
   </sequence>
   <sequence type="move" name="Explosion">
     <effect type="animation" animation="explosion" delay="3" who="self" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="6" stop-early="17" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="18" stop-early="29" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="30" stop-early="41" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="42" stop-early="53" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="explosion" delay="3" who="self" start-at="54" />
-	<effect type="sprite-transform" transform="hide" who="self" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="4" />
-	<effect type="delay" delay="30" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" stop-early="5" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="6" stop-early="17" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="18" stop-early="29" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="30" stop-early="41" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="42" stop-early="53" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="explosion" delay="3" who="self" start-at="54" />
+    <effect type="sprite-transform" transform="hide" who="self" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="4" />
+    <effect type="delay" delay="30" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" stop-early="5" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="6" stop-early="11" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="triple-pow" delay="6" who="foe" start-at="12" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Fury Swipes">
     <effect type="animation" animation="slash" delay="4" who="foe" />
@@ -1077,38 +1077,38 @@
   </sequence>
   <sequence type="move" name="Rest">
     <effect type="animation" animation="zees" delay="16" who="self" />
-	<effect type="delay" delay="8" />
+    <effect type="delay" delay="8" />
     <effect type="animation" animation="zees" delay="16" who="self" />
   </sequence>
   <sequence type="move" name="Rock Slide">
     <effect type="animation" animation="rocks-rising" delay="12" who="self" stop-early="23" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="16" stop-early="23" />
-	<effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="16" stop-early="23" />
-	<effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="8" stop-early="11" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="24" stop-early="31" />
-	<effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="24" stop-early="31" />
-	<effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="12" stop-early="15" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="32" stop-early="39" />
-	<effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="32" stop-early="39" />
-	<effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="16" stop-early="19" />
-	<effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="40" stop-early="47" />
-	<effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
-	<effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="40" stop-early="47" />
-	<effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="20" stop-early="23" />
-	<effect type="animation" animation="rocks-rising" delay="5" who="self" start-at="30" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
-	<effect type="animation" animation="rocks-rising" delay="16" who="self" start-at="192" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="16" stop-early="23" />
+    <effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="16" stop-early="23" />
+    <effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="8" stop-early="11" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="24" stop-early="31" />
+    <effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="24" stop-early="31" />
+    <effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="12" stop-early="15" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="32" stop-early="39" />
+    <effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="32" stop-early="39" />
+    <effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="16" stop-early="19" />
+    <effect type="screen-transform" transform="shake-horizontally-fast" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="40" stop-early="47" />
+    <effect type="screen-transform" transform="shake-vertically" offset="1" parallel="true" />
+    <effect type="animation" animation="rocks-rising" delay="8" who="self" start-at="40" stop-early="47" />
+    <effect type="animation" animation="rocks-rising" delay="4" who="self" start-at="20" stop-early="23" />
+    <effect type="animation" animation="rocks-rising" delay="5" who="self" start-at="30" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="animation" animation="rocks-rising" delay="16" who="self" start-at="192" />
     <effect type="animation" animation="rocks-midair" delay="6" who="self" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
     <effect type="animation" animation="triple-pow" delay="6" who="foe" />
-	<effect type="sequence" sequence="Screen Flash Normal" />
+    <effect type="sequence" sequence="Screen Flash Normal" />
   </sequence>
   <sequence type="move" name="Hyper Fang">
     <effect type="animation" animation="triangle-pow" delay="7" who="foe" />
@@ -1142,24 +1142,24 @@
     <effect type="sprite-transform" transform="slide-off" who="self" />
     <effect type="animation" animation="poof" delay="8" who="self" param="1" stop-early="24" />
     <effect type="sprite-transform" transform="show-as-substitute" who="self" />
-	<effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Substitute Broke">
     <effect type="delay" delay="30" />
     <effect type="sprite-transform" transform="slide-down" who="self" />
     <effect type="sprite-transform" transform="show-as-normal" who="self" />
-	<effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
   <sequence type="move" name="Substitute Pre-Attack">
     <effect type="sprite-transform" transform="slide-off" who="self" />
     <effect type="sprite-transform" transform="show-as-normal" who="self" />
-	<effect type="sprite-transform" transform="show" who="self" />
-	<effect type="delay" delay="20" />
+    <effect type="sprite-transform" transform="show" who="self" />
+    <effect type="delay" delay="20" />
   </sequence>
   <sequence type="move" name="Substitute Post-Attack">
     <effect type="sprite-transform" transform="slide-off" who="self" />
     <effect type="sprite-transform" transform="show-as-substitute" who="self" />
-	<effect type="sprite-transform" transform="show" who="self" />
+    <effect type="sprite-transform" transform="show" who="self" />
   </sequence>
 
   
