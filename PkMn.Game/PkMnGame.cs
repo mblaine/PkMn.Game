@@ -169,6 +169,14 @@ namespace PkMn.Game
             base.Update(gameTime);
         }
 
+        private void SpriteBatchBegin(Matrix? transform)
+        {
+            if(transform != null)
+                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null, (Matrix)transform);
+            else
+                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null);
+        }
+
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.SetRenderTarget(renderTarget);
@@ -179,11 +187,8 @@ namespace PkMn.Game
                 transform = Matrix.CreateTranslation(screenOffset.Value.X, screenOffset.Value.Y, 0);
 
             GraphicsDevice.Clear(SpriteManager.BackgroundColor);
-            if (transform != null)
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null, (Matrix)transform);
-            else
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null);    
-
+            SpriteBatchBegin(transform);
+            
             foeHUD.Draw(gameTime, GraphicsDevice, spriteBatch);
             selfHUD.Draw(gameTime, GraphicsDevice, spriteBatch);
 
@@ -193,18 +198,12 @@ namespace PkMn.Game
             SpriteManager.SetShader(foeRenderer.Palette);
             foeRenderer.Draw(gameTime, GraphicsDevice, spriteBatch);
             spriteBatch.End();
-            if (transform != null)
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null, (Matrix)transform);
-            else
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null);
-
+            SpriteBatchBegin(transform);
+            
             SpriteManager.SetShader(selfRenderer.Palette);
             selfRenderer.Draw(gameTime, GraphicsDevice, spriteBatch);
             spriteBatch.End();
-            if (transform != null)
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null, (Matrix)transform);
-            else
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null);
+            SpriteBatchBegin(transform);
 
             if (partyMenu.Visible)
                 partyMenu.Draw(gameTime, GraphicsDevice, spriteBatch);
@@ -218,20 +217,15 @@ namespace PkMn.Game
                     SpriteManager.SetShader(foeRenderer.Palette, true);
                     specialEffectManager.Draw(gameTime, GraphicsDevice, spriteBatch);
                     spriteBatch.End();
-                    if (transform != null)
-                        spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null, (Matrix)transform);
-                    else
-                        spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null);
+                    SpriteBatchBegin(transform);
                 }
                 else if (specialEffectManager.EffectNeedsMonDefaultPalette(selfRenderer))
                 {
                     SpriteManager.SetShader(selfRenderer.Palette, true);
                     specialEffectManager.Draw(gameTime, GraphicsDevice, spriteBatch);
                     spriteBatch.End();
-                    if (transform != null)
-                        spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null, (Matrix)transform);
-                    else
-                        spriteBatch.Begin(SpriteSortMode.Immediate, null, SamplerState.PointClamp, null, null, null);
+                    SpriteBatchBegin(transform);
+                    
                 }
                 else
                     specialEffectManager.Draw(gameTime, GraphicsDevice, spriteBatch);
