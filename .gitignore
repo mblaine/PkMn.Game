@@ -11,3 +11,4 @@
 *.dll
 *.exe
 [Tt]humbs.db 
+!*/Libraries/*.dll
