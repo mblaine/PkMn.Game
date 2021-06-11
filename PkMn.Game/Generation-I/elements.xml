@@ -45,8 +45,9 @@
     <effectiveness type="Fire" multiplier="2" />
     <effectiveness type="Flying" multiplier="2" />
     <effectiveness type="Ice" multiplier="2" />
-    <effectiveness type="Flying" multiplier="0.5" />
+    <effectiveness type="Flying" multiplier="2" />
     <effectiveness type="Ground" multiplier="0.5" />
+    <effectiveness type="Fighting" multiplier="0.5" />
   </element>
   <element name="Bug" category="physical">
     <effectiveness type="Grass" multiplier="2" />
